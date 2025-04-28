@@ -93,41 +93,41 @@ Making adjustments to roles is very similar to creating new roles. Start by sele
 
 ***Tip***: the search bar can help you find what you're looking for. 
 
-**add image here!!!**
+![image](role-modification-1.png)
 
 Use the "**Actions**" menu in the role details pane to edit the role. 
 
-**add image here!!!**
+![image](role-modification-2.png)
 
 The role edit form looks and behaves the same as the role creation form. Refer to the Role Creation section for details.  
 
 ## Role Deletion 
 Deletion of a role is similar to role modification. Refer to the Role Modification section for details. When delting a role, instead of selecting "**Edit**" from the "**Actions**" menu, select "**Delete**." Exercise caution when deleting roles: **deleting a role cannot be undone.** When deleting a role which is assigned to users, the role assignments will automatically be removed from those users. If you are sure you wish to delete the role, you will be asked to confirm. 
 
-**add image here!!!**
+![image](role-deletion-1.png)
 
 ## Role Duplication 
 Duplication of a role can be accomplished by following similar steps as role modification. Refer to the Role Modification section for details. However, instead of selecting "**Edit**" from the "**Actions**" menu, select "**Duplicate**." You will be asked to confirm. A system generated name will be given to the duplicate role. Role assignments will not be copied to the new role. 
 
-**Add image here!!!**
+![image](role-duplication-1.png)
 
 After confirming you will automatically be taken to the new/duplicate role. 
 
-**add image here!!!**
+![image](role-duplication-2.png)
 
 ## Shared Roles
 Shared roles are centrally managed in that they can only be edited in the consortia manager. A shared role will appear as a Role in all tenants with the same capabilities. User from the given tenant can be assigned to that role. Editing that role in the central tenant will change it for all tenants. 
 
 To share a role users must have permissions to access the consortia manager app and share data. With your active affiliation set to the systems central tenant. Navigate to Consortia manager -> Authorization Roles. 
 
-**add image here!!!**
+![image](shared-roles-1.png)
 
 * Select the central tenant from the Member dropdown at the top of the second pane 
 * Choose a Role that you have created in the central tenant 
 * Click the actions menu
 * Click "Share to all" 
 
-**add image here!!!**
+![image](shared-roles-2.png)
 
 * When the confirmation modal appears click "Submit" to confirm and share the role with all tenants in the system 
 * You will see a success toast message 
@@ -149,56 +149,56 @@ To manage role assignments in the context of a particular role, navigate to the 
 
 ***Tip:*** the search bar can help you find what you're looking for
 
-**add image here!!!!**
+![image](auth-1.png)
 
 Once you have selected a role, an additional pane will open showing the details of that role. This role detail pane will include on "**Assigned users**" accordion (which should be expanded by default). 
 
-**add image here!!!!**
+![image](auth-2.png)
 
 Clicking on the "**Assign/Unassign**" button will open the "**Select User**" modal. Use the facets and search functions to help find the user(s) you want to assign or unassign. 
 
-**add image here!!!!**
+![image](auth-3.png)
 
 To assign a user to the role, check the box in the first column. To unassign a user from the role, uncheck that box. When finished, click "**Save.**"
 
-**add imag ehere!!!!!**
+![image](auth-4.png)
 
 In some cases you may see a dialogue asking you to confirm the creation of user records in Keycloak. The creation of these records is necessary for the role assignment to succeed. Click "**Confirm**" to proceed, or "**Cancel**" if you're unsure. 
 
-**add image here!!!!**
+![image](auth-5.png)
 
 Upon completion, you will land back at the role detail view. If the assignment (for unassignment) was successful, you should see a green message indicating the success at the bottom of your screen. The "**Assigned users**" accordion should be updated to reflect the changes you've just made. 
 
 ### Users App
 To manage role assignments in the context of a particular user, navigate to the "**Users**" app. Use the facets and search functions to help find the user you want to assign to roles. 
 
-**add image here!!!!**
+![image](users-1.png)
 
 Select a user to display that user's details in a separate pane. Here yo uwill see a "User roles" accordion (collapsed by default). When collapsed, a bubble in the accordion header indicates how many roles the user is presently assigned to. While this accordion is helpful for viewing a user's role assignments, you cannot edit a user's role assignments here. Instead, you must select the "**Edit**" option from the "**Action**" menu. 
 
-**add image here!!!!**
+![image](users-2.png)
 
 On the Edit form, scroll down to and click on the "User roles" accordion to expand it. Here you will see the list of roles this user is assigned to. You can click the "X" icon for a given role to unassign that role. You also have the option to unassign all user roles and add user roles via the buttons below the list or roles. 
 
-**add image here!!!!**
+![image](users-3.png)
 
 When using "Unassign all users roles," you will be prompted to confirm. The roles being removed will be listed in the dialogue box. 
 
-**add image here!!!!**
+![image](users-4.png)
 
 When using "Add user roles," the "Select user roles" modal will be displayed. Use the facets and search functions to help find the role(s) you want to assign to the user. Check the boxes next to the roles you want to assign (or uncheck the roles you want to unassign). When finished, click "**Save & close**" to submit your changes. 
 
-**add image here!!!!**
+![image](users-5.png)
 
 Finally, in order for any of the changes you've made to be saved, you must click the "**Save & close**" button in the user edit form. 
 
-**add image here!!!!**
+![image](users-6.png)
 
 ***N.B.*** Don't forget to click "Save & close" on the user edit form to save your changes. If you cancel now, your changes will not take effect. 
 
 In some cases you may see a dialgoue asking you to confirm the creation of a user record in Keycloak. The creation of this record is necessary for the role assignment to succeed. Click "**Confirm**" to proceed, or "**Cancel**" if you're unsure. 
 
-**add image here!!!!**
+![image](users-7.png)
 
 Upon completion, you will land back at the user detail view. The "**User roles**" accordion shouild be updated to reflect the changes you've just made. 
 
