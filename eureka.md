@@ -62,17 +62,17 @@ This diagram may help you visualize the relationships between some of these term
 ## Role Creation
 Role creation happens in the "**Authorization Roles**" section of **Settings**. Use the "**+New**" button to open the form for creating a role. 
 
-**insert image here!!!!**
+![image](role-creation-1.png)
 
 Provide a name and description, then use the "**Select application**" button to open the selection modal. The purpose of selecting applications is to specify the functional areas which provide capabilities and capability sets you want to add to the role. Only Capabilities and Capability Sets provided by the selected application(s) will be shown. 
 
-**insert image here!!!!!**
+![image](role-creation-2.png)
 
-**insert next image here!!!!!**
+![image](role-creation-3.png)
 
 After selecting one or more applications and clicking "**Save and close**," the Capability and Capability Set portions of the role creation form will be populated, and you can select those which you want to include in your role by checking individual boxes or the boxes in the column headers. 
 
-**insert image here!!!!** 
+![image](role-creation-4.png)
 
 #### Notes on selecting Capabilities and Capability Sets: 
 * Capabilities and Capability Sets are divided into 3 groups: **Data**, **Settings**, and **Procedural**. These are intended to make it easier to sort through the options. Here are brief descriptions of each set: 
@@ -86,7 +86,7 @@ After selecting one or more applications and clicking "**Save and close**," the 
 * ***Tip:*** Using "find on page" (e.g. `Ctrl+F` / `Cmnd+F`) can be helpful when searching for capabilities
 * Don't forget to click "**Save & close**" when you've made your selections
 
-**insert image here!!!!!**
+![image](role-creation-5.png)
 
 ## Role Modification
 Making adjustments to roles is very similar to creating new roles. Start by selecting the name of the desired role. This will result in a detail pane to be displayed. 
