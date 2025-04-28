@@ -57,7 +57,7 @@ explains how to manage roles and their assignments. Migrating permissions from t
 **How do these relate to one another?** 
 This diagram may help you visualize the relationships between some of these terms: 
 
-![image](/root/folio-drafts/relation-diagram.png)
+![image](/relation-diagram.png)
 
 ## Role Creation 
 
