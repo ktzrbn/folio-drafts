@@ -2,7 +2,7 @@
 
 ## Overview
 The new Eureka platform, which FOLIO is adopting with the Sunflower release, replaces the permission-based access control model with a permission model based on roles. This page
-explains how to manage roles and their assignments. 
+explains how to manage roles and their assignments. Migrating permissions from the Okapi platform to Eureka can be found at the bottom of the page. 
 
 ## Terminology 
 
@@ -57,4 +57,30 @@ explains how to manage roles and their assignments.
 **How do these relate to one another?** 
 This diagram may help you visualize the relationships between some of these terms: 
 
-*insert image1* 
+![image](/root/folio-drafts/relation-diagram.png)
+
+## Role Creation 
+
+## Role Modification 
+
+## Role Deletion 
+
+## Role Duplication 
+
+## Shared Roles
+
+## Managing Role Assignments 
+
+### Settings / Authorization Roles 
+
+### Users App
+
+## Migration 
+
+### Migration APIs
+
+### Post-migration Cleanup 
+
+## Tips and Tricks 
+
+## Looking Ahead 
