@@ -203,10 +203,16 @@ In some cases you may see a dialgoue asking you to confirm the creation of a use
 Upon completion, you will land back at the user detail view. The "**User roles**" accordion shouild be updated to reflect the changes you've just made. 
 
 ## Migration
+When migrating from the Okapi platform to Eureka adjustments must be made. Some of this will be handled by migration APIs. Other parts will need to be performed by a human.  
 
 ### Migration APIs
+There are two APIs which do most of the heavy lifting. The goal of these is to ensure users who could perform certain actions on Okapi, can still perform those same actions on Eureka.
+* <u>Users migration</u> - provided by mod-users-keycloak. This API will create AuthUser for any User in the system which has at least one permission assigned to them.
+* <u>Roles migration</u> - provided by mod-roles-keycloak. This API looks at the permissions assigned to users, and creates a Role for each unique set. These system-generated roles are then assigned to the appropriate users.
+	* ***N.B.*** Given the high level of nesting in permission sets on the Okapi platform, and the flat roles on Eureka, the migration APIs do not attempt to perform a one-to-one mapping of permission Sets to roles.
 
 ### Post-migration Cleanup 
+After the migration APIs have been run, human intervention is likely required to clean up system-generated role.  This includes renaming, providing descriptions, splitting, and possibly combining. Alternatively, administrators could create roles from scratch, transition to them, and eventually remove the system generated roles
 
 ## Tips and Tricks 
 
