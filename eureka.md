@@ -1,8 +1,8 @@
 # Managing Roles with Eureka
 
 ## Overview
-The new Eureka platform, which FOLIO is adopting with the Sunflower release, replaces the permission-based access control model with a permission model based on roles. This page
-explains how to manage roles and their assignments. Migrating permissions from the Okapi platform to Eureka can be found at the bottom of the page. 
+The new Eureka platform, which FOLIO is adopting with the Sunflower release, replaces the permission-based access control model with a roles-based permission model. This page
+explains how to manage roles and their assignments. Information on migrating permissions from the Okapi platform to Eureka can be found at the bottom of the page. 
 
 ## Terminology 
 
@@ -147,7 +147,7 @@ Role assignments can be maanged from a few different places. Which place is most
 ### Settings / Authorization Roles 
 To manage role assignments in the context of a particular role, navigate to the "**Authorization Roles**" section of **Settings**. Start by selecting the name of the desired role. This will result in a detail pane to be displayed. 
 
-***Tip:*** the search bar can help you find what you're looking for
+***Tip:*** the search bar can help you find what you're looking for.
 
 ![image](auth-1.png)
 
@@ -207,13 +207,12 @@ When migrating from the Okapi platform to Eureka adjustments must be made. Some 
 
 ### Migration APIs
 There are two APIs which do most of the heavy lifting. The goal of these is to ensure users who could perform certain actions on Okapi, can still perform those same actions on Eureka.
-* <u>Users migration</u> - provided by mod-users-keycloak. This API will create AuthUser for any User in the system which has at least one permission assigned to them.
-* <u>Roles migration</u> - provided by mod-roles-keycloak. This API looks at the permissions assigned to users, and creates a Role for each unique set. These system-generated roles are then assigned to the appropriate users.
-	* ***N.B.*** Given the high level of nesting in permission sets on the Okapi platform, and the flat roles on Eureka, the migration APIs do not attempt to perform a one-to-one mapping of permission Sets to roles.
+* <u>Users migration</u> - provided by mod-users-keycloak. This API will create AuthUser for any User in the system which has at least one permission assigned to them
+* <u>Roles migration</u> - provided by mod-roles-keycloak. This API looks at the permissions assigned to users, and creates a Role for each unique set. These system-generated roles are then assigned to the appropriate users
+	* ***N.B.*** Given the high level of nesting in permission sets on the Okapi platform, and the flat roles on Eureka, the migration APIs do not attempt to perform a one-to-one mapping of permission Sets to roles
 
 ### Post-migration Cleanup 
-After the migration APIs have been run, human intervention is likely required to clean up system-generated role.  This includes renaming, providing descriptions, splitting, and possibly combining. Alternatively, administrators could create roles from scratch, transition to them, and eventually remove the system generated roles
+After the migration APIs have been run, human intervention is likely required to clean up system-generated roles. This includes renaming, providing descriptions, splitting, and possibly combining roles. Alternatively, administrators could create roles from scratch, transition to them, and eventually remove the system generated roles.
 
-## Tips and Tricks 
+![image](post-migration.png)
 
-## Looking Ahead 
