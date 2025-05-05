@@ -227,6 +227,3 @@ There are two APIs which do most of the heavy lifting. The goal of these is to e
 
 ### Post-migration Cleanup 
 After the migration APIs have been run, human intervention is likely required to clean up system-generated roles. This includes renaming, providing descriptions, splitting, and possibly combining roles. Alternatively, administrators could create roles from scratch, transition to them, and eventually remove the system generated roles.
-
-![image](post-migration.png)
-
