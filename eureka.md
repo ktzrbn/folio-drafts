@@ -1,4 +1,10 @@
-# Permissions 
+---
+title: "Permissions"
+linkTitle: "Permissions"
+date: 2025-05-05
+weight: 50
+tags: ["parenttopic"]
+---
 
 FOLIO has a user permissions system that allows for granular control over what users can access in their FOLIO installation.
 
@@ -6,7 +12,7 @@ Each app defines its own permissions for the frontend and backend modules that i
 
 By default, a FOLIO installation does not provide roles or permission profiles for library staff. Instead, FOLIO administrators can build their own groups of permissions called permission sets that correspond to their local needs. They can then assign those permissions to users through the Users app.
 
-# Managing Roles with Eureka
+## Managing Roles with Eureka
 
 ## Overview
 The new Eureka platform, which FOLIO is adopting with the Sunflower release, replaces the permission-based access control model with a roles-based permission model. This page
